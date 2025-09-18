@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let a = 2;
+    if (a % 2 == 0) {
+        document.writeln("This is an even number");
+    }
+    else {
+        document.writeln("This is an odd number");
+    }
+
+    let marks = 56.3;
+
+    switch (marks > 0) {
+        case (marks > 90):
+            document.writeln("grade - A");
+            break;
+
+        case (marks > 80):
+            document.writeln("grade - B");
+            break;
+
+        case (marks > 70):
+            document.writeln("grade - C");
+            break;
+
+        case (marks > 60):
+            document.writeln("grade - D");
+            break;
+
+        case (marks > 50):
+            document.writeln("grade - E");
+            break;
+
+        default:
+            document.writeln("grade - F")
+    }
+
+    document.writeln("Using while loop:");
+    var i = 1;
+    while (i <= 5) {
+        document.writeln(i);
+        i++;
+    }
+
+    document.writeln("using do while loop:");
+    var i = 1;
+    do {
+        document.writeln(i);
+        i++;
+    } while (i <= 5);
+
+    document.writeln("using for loop:");
+    var i = 1;
+    for (var i = 1; i <= 5; i++) {
+        document.writeln(i);
+    }
+
+
+    const num=Math.floor((Math.random()*10)+1);
+    attempt=0;
+    do{
+        input = prompt("Guess the number");
+        attempt++;
+        if(input == num){
+            alert("Congragulations guess number within"+attempt+"attempts");
+            break;
+        }
+        else{
+            alert("wrong number ,guess again");
+        }
+
+    }while(input!=num);
+
+</script>
